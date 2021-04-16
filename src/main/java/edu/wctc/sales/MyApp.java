@@ -1,4 +1,4 @@
-package edu.wctc.dice;
+package edu.wctc.sales;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -8,6 +8,6 @@ public class MyApp {
         context.register(AppConfig.class);
         context.refresh();
 
-        ((DiceGame)context.getBean("diceGame")).play();
+        ((SalesReportProgram)context.getBean("salesReportProgram")).runSalesReport();
     }
 }
